@@ -45,10 +45,6 @@ async def subtrackt_number(request):
 #Forloopet kan f.eks. køre på en range fra 0 til "number"
 #I skal bruge {%endfor%} for at jinja kan afgøre hvornår forloops blokken er slut
 
-  
-
-
-
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8080)
