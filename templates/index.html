@@ -9,11 +9,29 @@
                 <button type="submit" class = "button">Click me to add</button>
             </form>
         </div>
+        <div class = "button-box">
+            <form action="/remove" method = "POST" >
+                <button type="submit" class = "button">Click me to remove</button>
+            </form>
+        </div>
+
 
         <div class = "number-box">
             <h1> {{number}} </h1>
         </div>
         
+        <ul>
+        {% for i in range(0, 10) %}
+            <li>
+                <em>{{i}}</em>
+            </li>
+        {% endfor %}
+        </ul>
+
     </body>
+
+
+
+
 
 </html>
