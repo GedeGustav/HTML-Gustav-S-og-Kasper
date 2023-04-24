@@ -23,7 +23,7 @@ globals = {}
 @jinja.template("index.html")
 async def index(request):
     #TODO: Returner jeres dictionary, med globale værdier, her
-    return None
+    return globals
 
 #Denne funktion skal tilføje 1 til nummeret i jeres dict
 @app.post("/add")
@@ -38,7 +38,6 @@ async def add_number(request):
 #TODO: Prøv at lave et forloop i en HTML fil vha. statement-delimiteren-{% %}
 #Forloopet kan f.eks. køre på en range fra 0 til "number"
 #I skal bruge {%endfor%} for at jinja kan afgøre hvornår forloops blokken er slut
-
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8080)
